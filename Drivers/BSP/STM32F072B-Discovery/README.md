@@ -1,6 +1,6 @@
-# BSP STM32072B-EVAL Component
+# BSP 32F072BDISCOVERY Component
 
-![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/stm32072b-eval.svg?color=brightgreen)
+![latest tag](https://img.shields.io/github/v/tag/STMicroelectronics/32f072bdiscovery.svg?color=brightgreen)
 
 ## Overview
 
@@ -19,21 +19,22 @@ Two models of publication are proposed for the STM32Cube embedded software:
 
 ## Description
 
-This **stm32072b-eval** MCU component repository is one element of the **STM32CubeF0** MCU embedded software package, providing the **STM32072B-EVAL** BSP BOARD component part.
+This **32f072bdiscovery** MCU component repository is one element of the **STM32CubeF0** MCU embedded software package, providing the **32F072BDISCOVERY** BSP BOARD component part.
 
 ## Release note
 
-Details about the content of this release are available in the release note [here](https://htmlpreview.github.io/?https://github.com/STMicroelectronics/stm32072b-eval/blob/main/Release_Notes.html).
+Details about the content of this release are available in the release note [here](https://htmlpreview.github.io/?https://github.com/STMicroelectronics/32f072bdiscovery/blob/main/Release_Notes.html).
 
 ## Compatibility information
 
 Below is the list of the BSP *component* drivers to be used with this BSP *board* driver. It is **crucial** that you use a consistent set of CMSIS - HAL - BSP versions, as mentioned in [this](https://htmlpreview.github.io/?https://github.com/STMicroelectronics/STM32CubeF0/blob/master/Release_Notes.html) release note.
 
 * [stm32-bsp-common](https://github.com/STMicroelectronics/stm32-bsp-common)
-* [stm32-hx8347d](https://github.com/STMicroelectronics/stm32-hx8347d)
-* [stm32-spfd5408](https://github.com/STMicroelectronics/stm32-spfd5408)
-* [stm32-stlm75](https://github.com/STMicroelectronics/stm32-stlm75)
+* [stm32-i3g4250d](https://github.com/STMicroelectronics/stm32-i3g4250d)
+* [stm32-l3gd20](https://github.com/STMicroelectronics/stm32-l3gd20)
 
 ## Troubleshooting
 
-Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
+If you have any issue with the **software content** of this repository, you can file an issue [here](https://github.com/STMicroelectronics/32f072bdiscovery/issues/new/choose).
+
+For any other question related to the product, the tools, the environment, you can submit a post to the **ST Community** on the appropriate topic [page](https://community.st.com/s/topiccatalog).
