@@ -67,7 +67,7 @@ Src/system_stm32f0xx.c
 
 # ASM sources
 ASM_SOURCES =  \
-startup_stm32f072xb.s
+SW4STM32/startup_stm32f072xb.s
 
 
 #######################################
@@ -146,7 +146,7 @@ CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 # LDFLAGS
 #######################################
 # link script
-LDSCRIPT = STM32F072RBTx_FLASH.ld
+LDSCRIPT = SW4STM32/STM32F072B-Discovery/STM32F072RBTx_FLASH.ld
 
 # libraries
 LIBS = -lc -lm -lnosys
