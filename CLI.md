@@ -24,31 +24,6 @@ Other source will write "C-s" and "C-S" for command and "M-s" for meta prefix.
 Follow the instructions to set "Option as Meta key".
 https://support.apple.com/guide/terminal/change-profiles-keyboard-settings-trmlkbrd/mac
 
-# Prompt setup
-Any good Unix hacker has a prompt setup to maximize their productivity.
-
-You can set up a decent one if you use Bash by putting the following in your `~/.bashrc` file.
-`PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\t \u@\h [\w]${PS1_CMD1} \$'`
-
-You can go nuts with [generating a custom prompt](https://bash-prompt-generator.org/).
-
-# PATH and finding executables.
-If you get the following error, you will need to setup the PATH environment variable.
-```
-% foo
-bash: foo: command not found
-```
-
-PATH is a colon (:) separated list of locations the shell will search when you provide a command. It might look something like this.
-
-`PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`
-
-You can list currently set environment variables with the `env` command.
-
-If a program is installed in a location not in your PATH, you can add the location in your `~/.bashrc` or `~/.profile` configuration.
-
-`export PATH=$PATH:/home/snelgrov/.pico-sdk/toolchain/13_2_Rel1/bin`
-
 # Using the command line like a pro
 The command line can seem slow. Typing out everything *is* slow. The folks who designed the tools made them to be as efficient as possible. **The tab key is your best friend.** Everytime you hit tab, the shell will attempt to autocomplete. If there are multiple possible completions, it will complete as much as it can and show you all the options. Type a few more characters and the tab again. When you are changing directories, you do not have to change one directory, list the contents of the directory, then change directory again. Just add a slash, and then keep using autocomplete..
 
@@ -137,3 +112,28 @@ The real power of the shell is that you work in a full programming environment! 
 [Bash beginners guide](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 
 [The bash manual](https://www.gnu.org/software/bash/manual/bash.html)
+
+# Prompt setup
+Any good Unix hacker has a prompt setup to maximize their productivity.
+
+You can set up a decent one if you use Bash by putting the following in your `~/.bashrc` file.
+`PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\t \u@\h [\w]${PS1_CMD1} \$'`
+
+You can go nuts with [generating a custom prompt](https://bash-prompt-generator.org/).
+
+# PATH and finding executables.
+If you get the following error, you will need to setup the PATH environment variable.
+```
+% foo
+bash: foo: command not found
+```
+
+PATH is a colon (:) separated list of locations the shell will search when you provide a command. It might look something like this.
+
+`PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin`
+
+You can list currently set environment variables with the `env` command.
+
+If a program is installed in a location not in your PATH, you can add the location in your `~/.bashrc` or `~/.profile` configuration.
+
+`export PATH=$PATH:/home/snelgrov/.pico-sdk/toolchain/13_2_Rel1/bin`
