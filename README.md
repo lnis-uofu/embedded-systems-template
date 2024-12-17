@@ -31,6 +31,8 @@ brew install cask gcc-arm-embedded
 brew install openocd
 brew install stlink
 ```
+
+
 ### WSL
 The Windows Subsystem for Linux (WSL) allows installation of a Linux environment inside of Windows.
 
@@ -69,3 +71,7 @@ https://www.virtualbox.org/manual/topics/BasicConcepts.html#usb-support
 ### NoMachine
 
 https://kb.nomachine.com/DT10K00060#4.3
+
+# Drivers
+This repository contains libraries copied from https://github.com/STMicroelectronics/STM32CubeF0 at commit 165396863a295fe41640f721f8b8ba276572e083.
+License information for these libraries is located inside library directories.
