@@ -6,10 +6,31 @@ Download and install Visual Studio Code.
 
 https://code.visualstudio.com/
 
+Some additional instructions for WSL on Windows.
+
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode
+
+Windows users will need to install PuTTY
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
 ## Unix installation
 Students are required to work in a Unix environment for this course.
 If you wish, you may install Linux as your primary operating system, otherwise you will set up a virtual environment.
+Mac OSX is a Unix variant, and can be used as the primary operating system..
 
+### OSX
+You will need to install brew.
+
+https://brew.sh/
+
+From there, install the package dependencies.
+```
+brew tap caskroom/cask
+brew install cask gcc-arm-embedded
+brew install openocd
+brew install stlink
+```
 ### WSL
 The Windows Subsystem for Linux (WSL) allows installation of a Linux environment inside of Windows.
 
@@ -22,7 +43,8 @@ https://www.virtualbox.org/
 
 ### NoMachine
 The CADE lab has all software needed already installed.
-You will need to install NoMachine.
+You will need to install NoMachine for USB forwarding.
+We will not be using the GUI
 
 https://www.nomachine.com/
 
