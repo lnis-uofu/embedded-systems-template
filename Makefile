@@ -121,6 +121,7 @@ AS_INCLUDES =
 # C includes
 C_INCLUDES =  \
 -IInc \
+-IDrivers/BSP/STM32F072B-Discovery \
 -IDrivers/STM32F0xx_HAL_Driver/Inc \
 -IDrivers/STM32F0xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F0xx/Include \
@@ -156,9 +157,11 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) #-Wl,-Map=$(B
 # default action: build all
 all: $(BUILD_DIR)/$(TARGET).elf
 
-program: all
-	$(CP) -O binary $(BUILD_DIR)/$(TARGET).elf $(BUILD_DIR)/$(TARGET).bin
-	st-flash --reset --flash=128k write $(BUILD_DIR)/$(TARGET).bin 0x8000000
+%.bin: %.elf
+	$(CP) -O binary $< $@
+
+program: $(BUILD_DIR)/$(TARGET).bin
+	st-flash --reset --flash=128k write $< 0x8000000 --connect-under-reset
 
 #######################################
 # build the application
