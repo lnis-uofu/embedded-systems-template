@@ -55,7 +55,7 @@ https://www.nomachine.com/getting-started-with-nomachine
 ## Package installation
 For Debian based systems (including Ubuntu and Mint), you will need to install the following packages.
 ```
-apt-get install stlink-tools gcc-arm-none-eabi binutils-arm-none-eabi make git
+apt-get install stlink-tools gcc-arm-none-eabi binutils-arm-none-eabi make git openocd
 ```
 
 # Development process
@@ -71,6 +71,11 @@ https://www.virtualbox.org/manual/topics/BasicConcepts.html#usb-support
 ### NoMachine
 
 https://kb.nomachine.com/DT10K00060#4.3
+
+# VSCode remote connections
+You will be working connected to a remote machine.
+
+https://code.visualstudio.com/docs/remote/remote-overview
 
 # Drivers
 This repository contains libraries copied from https://github.com/STMicroelectronics/STM32CubeF0 at commit 165396863a295fe41640f721f8b8ba276572e083.
