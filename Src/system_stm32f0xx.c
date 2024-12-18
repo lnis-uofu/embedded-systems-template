@@ -49,36 +49,8 @@
   *
   ******************************************************************************
   */
+#include <stm32f0xx.h>
 
-/** @addtogroup CMSIS
-  * @{
-  */
-
-/** @addtogroup stm32f0xx_system
-  * @{
-  */
-
-/** @addtogroup STM32F0xx_System_Private_Includes
-  * @{
-  */
-
-#include "stm32f0xx.h"
-
-/**
-  * @}
-  */
-
-/** @addtogroup STM32F0xx_System_Private_TypesDefinitions
-  * @{
-  */
-
-/**
-  * @}
-  */
-
-/** @addtogroup STM32F0xx_System_Private_Defines
-  * @{
-  */
 #if !defined  (HSE_VALUE) 
   #define HSE_VALUE    ((uint32_t)8000000) /*!< Default value of the External oscillator in Hz.
                                                 This value can be provided and adapted by the user application. */
@@ -93,17 +65,6 @@
 #define HSI48_VALUE    ((uint32_t)48000000) /*!< Default value of the HSI48 Internal oscillator in Hz.
                                                  This value can be provided and adapted by the user application. */
 #endif /* HSI48_VALUE */
-/**
-  * @}
-  */
-
-/** @addtogroup STM32F0xx_System_Private_Macros
-  * @{
-  */
-
-/**
-  * @}
-  */
 
 /** @addtogroup STM32F0xx_System_Private_Variables
   * @{

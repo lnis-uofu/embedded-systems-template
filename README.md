@@ -77,6 +77,10 @@ You will be working connected to a remote machine.
 
 https://code.visualstudio.com/docs/remote/remote-overview
 
+You will need to install the Microsoft C/C++ Extension. You should be prompted to install it the first time you open your project. If you are not, the link is below.
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+
 # Drivers
 This repository contains libraries copied from https://github.com/STMicroelectronics/STM32CubeF0 at commit 165396863a295fe41640f721f8b8ba276572e083.
 License information for these libraries is located inside library directories.
