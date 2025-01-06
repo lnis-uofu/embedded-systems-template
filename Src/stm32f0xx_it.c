@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
-  * @file    Templates/Src/stm32f0xx_it.c 
+  * @file    Templates/Src/stm32f0xx_it.c
   * @author  MCD Application Team
   * @brief   Main Interrupt Service Routines.
-  *          This file provides template for all exceptions handler and 
+  *          This file provides template for all exceptions handler and
   *          peripherals interrupt service routine.
   ******************************************************************************
   * @attention
@@ -18,6 +18,7 @@
   ******************************************************************************
   */
 #include "main.h"
+#include <stm32f0xx_hal.h>
 #include <stm32f0xx_it.h>
 
 /******************************************************************************/

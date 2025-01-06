@@ -1,5 +1,6 @@
-#include <stm32f0xx_hal.h>
 #include "main.h"
+#include <stm32f0xx_hal.h>
+#include <stm32f072b_discovery.h>
 
 /**
   * @brief  This function is executed in case of error occurrence.
@@ -16,7 +17,7 @@ void Error_Handler(void)
 
 /**
   * @brief  System Clock Configuration
-  *         The system Clock is configured as follow : 
+  *         The system Clock is configured as follow :
   *            System Clock source            = PLL (HSI48)
   *            SYSCLK(Hz)                     = 48000000
   *            HCLK(Hz)                       = 48000000
@@ -33,16 +34,16 @@ void SystemClock_Config(void)
 {
     /* STM32F0xx HAL library initialization:
     - Configure the Flash prefetch
-    - Systick timer is configured by default as source of time base, but user 
-        can eventually implement his proper time base source (a general purpose 
-        timer for example or other time source), keeping in mind that Time base 
-        duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and 
+    - Systick timer is configured by default as source of time base, but user
+        can eventually implement his proper time base source (a general purpose
+        timer for example or other time source), keeping in mind that Time base
+        duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and
         handled in milliseconds basis.
     - Low Level Initialization
     */
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
   RCC_OscInitTypeDef RCC_OscInitStruct;
-  
+
   /* Select HSI48 Oscillator as PLL source */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48;
   RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
@@ -76,7 +77,7 @@ void SystemClock_Config(void)
   * @retval None
   */
 void assert_failed(uint8_t* file, uint32_t line)
-{ 
+{
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 
