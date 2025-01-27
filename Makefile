@@ -1,3 +1,5 @@
+TARGET ?= LAB1
+
 PREFIX = arm-none-eabi-
 CC = $(PREFIX)gcc
 AS = $(PREFIX)gcc -x assembler-with-cpp
@@ -7,11 +9,6 @@ SZ = $(PREFIX)size
 HEX = $(CP) -O ihex
 BIN = $(CP) -O binary -S
 ST_FLASH = st-flash
-
-######################################
-# target
-######################################
-TARGET = Lab
 
 ######################################
 # building variables
@@ -79,7 +76,8 @@ AS_DEFS =
 # C defines
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
--DSTM32F072xB
+-DSTM32F072xB \
+-D${TARGET}
 
 
 # AS includes
