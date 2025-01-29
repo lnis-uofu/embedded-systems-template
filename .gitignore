@@ -8,3 +8,4 @@ build
 *.lst
 .DS_Store
 .project
+.pio

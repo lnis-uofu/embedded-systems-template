@@ -1,7 +1,28 @@
 This is a project template for ECE 5780, Embedded Systems.
 
 # Installation
-## Local Machine
+## VSCode
+Download and install Visual Studio Code.
+
+https://code.visualstudio.com/
+
+Install these extensions
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
+
+https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide
+
+## Git
+
+If you are on Windows, install git
+
+https://git-scm.com/downloads
+
+Linux and MacOS users should already have git installed through their OS.
+
+# Installation instructions for remote development or system wide installation.
+**Note that NoMachine USB forwarding has been found to be too unstable. These instructions are still relevant if you wish to install the toolchain outside of platformio.**.
+## Local machine
 Download and install Visual Studio Code.
 
 https://code.visualstudio.com/
@@ -17,7 +38,7 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 ## Unix installation
 Students are required to work in a Unix environment for this course.
 If you wish, you may install Linux as your primary operating system, otherwise you will set up a virtual environment.
-Mac OSX is a Unix variant, and can be used as the primary operating system..
+Mac OSX is a Unix variant, and can be used as the primary operating system.
 
 ### OSX
 You will need to install brew.
